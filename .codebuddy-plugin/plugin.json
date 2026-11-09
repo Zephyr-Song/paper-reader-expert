@@ -1,0 +1,65 @@
+{
+  "name": "paper-reader",
+  "version": "1.0.0",
+  "description": "An expert that reads academic papers end-to-end: reconstructs the problem-method-evidence chain, audits claim-evidence alignment, and turns it into a citable structured report with a minimal replication path.",
+  "author": {
+    "name": "Zephyr Song",
+    "email": "2321286740@qq.com"
+  },
+  "homepage": {
+    "url": "https://github.com/Zephyr-Song/paper-reader-expert",
+    "type": "github"
+  },
+  "license": "MIT",
+  "keywords": [
+    "paper-reading",
+    "literature-review",
+    "peer-review",
+    "reproducibility",
+    "research"
+  ],
+  "agents": ["./agents/paper-reader.md"],
+  "skills": ["./skills/paper-analysis"],
+
+  "expertType": "agent",
+  "agentName": "paper-reader",
+
+  "displayName": {
+    "en": "Lu Zhiwei",
+    "zh": "陆知微"
+  },
+  "profession": {
+    "en": "Research Paper Analyst",
+    "zh": "论文解读专家"
+  },
+  "displayDescription": {
+    "en": "Reads AI/CS papers end-to-end: reconstructs problem, method, evidence and claims, audits whether the experiments actually support the conclusions, and turns it into a citable structured report with a minimal replication path.",
+    "zh": "精读 AI/CS 论文，拆解问题、方法、实验与结论，评估证据强度与复现难度，输出结构化解读"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "04-DataAI",
+  "defaultInitPrompt": {
+    "zh": "帮我精读这篇论文（附 PDF / 链接 / arXiv ID），输出结构化解读与批判性评估",
+    "en": "Read this paper closely for me (PDF / link / arXiv ID) and produce a structured reading with a critical assessment"
+  },
+  "plugin": "paper-reader",
+  "tags": [
+    { "en": "Paper Breakdown", "zh": "论文精读" },
+    { "en": "Evidence Audit", "zh": "证据审计" },
+    { "en": "Reproducibility", "zh": "复现评估" }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Read this paper closely for me (PDF / link / arXiv ID) and produce a structured reading with a critical assessment",
+      "zh": "帮我精读这篇论文（附 PDF / 链接 / arXiv ID），输出结构化解读与批判性评估"
+    },
+    {
+      "en": "What is the actual novelty here, and how is it different from the closest prior work?",
+      "zh": "这篇论文的核心创新点到底是什么？跟最接近的已有工作相比是真差异还是包装？"
+    },
+    {
+      "en": "Do these experiments actually support the claims? Find the weak spots and give me a minimal replication plan.",
+      "zh": "这组实验真的支撑它的结论吗？帮我挑刺，并给出最小复现路径"
+    }
+  ]
+}

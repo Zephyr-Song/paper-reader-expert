@@ -1,0 +1,7 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.pyc
+__pycache__/
+
+# Keep avatars/.gitkeep is fine; nothing else to ignore
